@@ -4,7 +4,7 @@ const PORT = 5800;
 const HOST = '0.0.0.0';
 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static('app'));
 /*app.get('/', (req, res) => {
   res.send('Hello world4\n');
 });
