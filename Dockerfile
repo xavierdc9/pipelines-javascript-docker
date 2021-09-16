@@ -6,7 +6,7 @@
 
 # Build the membarrier check tool.
 FROM alpine:3.12
-WORKDIR /tmp
+WORKDIR /app
 COPY membarrier_check.c .
 RUN apk --no-cache add build-base linux-headers
 RUN gcc -static -o membarrier_check membarrier_check.c
@@ -32,7 +32,7 @@ ARG LZ4_URL=https://github.com/lz4/lz4/archive/v${LZ4_VERSION}.tar.gz
 #ARG PROFILE_CLEANER_URL=https://github.com/graysky2/profile-cleaner/raw/v${PROFILE_CLEANER_VERSION}/common/profile-cleaner.in
 
 # Define working directory.
-WORKDIR /tmp
+WORKDIR /app
 
 # MH Install npm
 RUN \
