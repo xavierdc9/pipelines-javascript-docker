@@ -37,7 +37,10 @@ WORKDIR /app
 # MH Install npm
 RUN \
     apk add --update nodejs nodejs-npm
-
+    
+RUN \
+    npm install express
+    
 # Install JSONLZ4 tools.
 RUN \
     add-pkg --virtual build-dependencies \
