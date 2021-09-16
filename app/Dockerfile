@@ -166,7 +166,7 @@ RUN \
 # Add files.
 COPY rootfs/ /
 COPY . .
-COPY --from=0 /tmp/membarrier_check /usr/bin/
+COPY --from=0 /app/membarrier_check /usr/bin/
 
 #Expose export
 EXPOSE 5800
