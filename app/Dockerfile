@@ -186,4 +186,4 @@ LABEL \
       org.label-schema.vcs-url="https://github.com/jlesage/docker-firefox" \
       org.label-schema.schema-version="1.0"
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "start", "server.js" ]
