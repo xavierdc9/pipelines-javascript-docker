@@ -32,7 +32,7 @@ ARG LZ4_URL=https://github.com/lz4/lz4/archive/v${LZ4_VERSION}.tar.gz
 #ARG PROFILE_CLEANER_URL=https://github.com/graysky2/profile-cleaner/raw/v${PROFILE_CLEANER_VERSION}/common/profile-cleaner.in
 
 # Define working directory.
-WORKDIR /tmp
+WORKDIR /app
 
 # MH Install npm
 RUN \
